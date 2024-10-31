@@ -1,0 +1,194 @@
+@import 'variables.css';
+@import 'login.css';
+
+
+.hero {
+    background-image: var(--image-url);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px rgba(255, 253, 253, 0.973);
+    text-decoration-color: aliceblue;
+    text-emphasis-color: white;
+}
+
+.hero h1, .hero p {
+    color: white;
+}
+
+.hero-content {
+    z-index: 1;
+    text-align: center;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #000; /* or simply black */
+}
+
+.nav-item {
+    color: #fff; /* or simply white */
+}
+
+/* Change text color of nav-link to white */
+.nav-link {
+    color: #fff; /* or simply white */
+}
+
+/* Change text color of active nav-link to white */
+.nav-link.active {
+    color: #fff; /* or simply white */
+}
+
+/* Style the Signup button */
+.nav-item:last-child .nav-link {
+    background-color: pink; /* or any other pink shade you prefer */
+    border-radius: 5px; /* optional: adds a slight rounded corner */
+    font-weight: bold; /* makes the text bold */
+}
+
+/* Position the Signup button at the farthest left */
+.navbar-nav {
+    flex-direction: row-reverse; /* reverses the order of nav items */
+}
+
+.carousel-inner {
+    height: 100vh; /* Set the height to full viewport height */
+}
+
+.carousel-inner img {
+    width: 100%; /* Make images full width */
+    height: 100%; /* Make images full height */
+    object-fit: cover; /* Keep aspect ratio and cover the area */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Adjust the width of prev/next buttons */
+}
+
+/* Position the text area and button on top of the image slider */
+.col-md-6 {
+    position: relative;
+}
+
+.btn {
+    position: -webkit-sticky;
+    top: 20px; /* Adjust the top position */
+    left: 20px; /* Adjust the left position */
+    z-index: 1; /* Ensure they're on top of the image slider */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the height to full viewport height */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keep aspect ratio and cover the area */
+    background-size: cover; /* Add this to ensure background size is covered */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change text color to white */
+}
+
+.overlay h2 {
+    margin-bottom: 20px; /* Add some margin */
+}
+
+.navbar-text {
+    font-size: 1.2rem; /* adjust the font size as needed */
+}
+
+.row {
+   display: flexbox;
+    place-items: center;
+}
+
+.login-container {
+    height: 100vh; /* Full height */
+    display: flex;
+    background-image: var(--login-image-url);
+    top: 0;
+    left: 1;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Image styling 
+.login-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: var(--login-image-url);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}*/
+
+/* Image fade effect */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, black 0%, transparent 100%);
+}
+
+/* Form styling */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.login-form{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .eye-icon::before {
+    content: "\f06e"; /* Font Awesome eye icon */
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #ccc;
+  }
+
+/* dashboard styling */
+.navbar-brand {
+    color: #fff; /* Change text color to white */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make font bold */
+    z-index: 1; /* Bring text to front */
+  }

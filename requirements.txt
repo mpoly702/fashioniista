@@ -1,0 +1,10 @@
+flask==3.0.3
+itsdangerous==2.2.0
+Flask-PyMongo==2.3.0
+flask-session==0.8.0
+werkzeug==3.0.3
+flask-login==0.6.3
+mongoengine==0.29.0
+wtforms==3.1.2
+flask-wtf==1.2.1
+Flask-Bcrypt==1.0.1

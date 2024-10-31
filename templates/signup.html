@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionista</title>
+    <style type="text/css">
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/styles.css') }}">
+</head>
+<body>
+    <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signup-modal-label">Create account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signup-form" method="post">
+                        {{ form.hidden_tag() }}
+                        <div class="mb-3">
+                            {{ form.fullname.label(class_='form-label') }}
+                            {{ form.fullname(class_='form-control', required=True) }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.email.label(class_='form-label') }}
+                            {{ form.email(class_='form-control', type='email', required=True) }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.password.label(class_='form-label') }}
+                            {{ form.password(class_='form-control', type='password', required=True) }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.phone_number.label(class_='form-label') }}
+                            {{ form.phone_number(class_='form-control', type='tel', required=True) }}
+                        </div>
+                        <div class="form-check">
+                            {{ form.agreement.label(class_='form-check-label') }}
+                            {{ form.agreement(class_='form-check-input', required=True) }}
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    {{ form.submit(class_='btn btn-danger', id='signup-btn') }}
+                </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
