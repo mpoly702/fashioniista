@@ -1,7 +1,7 @@
-Eco-Friendly Fashion Guide
+FASHIONISTA
 
 Description:
-Eco-Friendly Fashion Guide is a collaborative web project aimed at providing users with valuable information and resources on sustainable fashion. This site features tips on eco-friendly fashion practices, lists of sustainable brands, information on the environmental impact of different materials, DIY upcycling tutorials, and styling advice for a sustainable wardrobe. The project leverages HTML, CSS, JavaScript, and Python/Flask for both the frontend and backend, creating a dynamic and informative platform for users.
+fashionista is a collaborative web project aimed at providing users with valuable information and resources on sustainable fashion. This site features tips on eco-friendly fashion practices, lists of sustainable brands, information on the environmental impact of different materials, DIY upcycling tutorials, and styling advice for a sustainable wardrobe. The project leverages HTML, CSS, JavaScript, and Python/Flask for both the frontend and backend, creating a dynamic and informative platform for users.
 
 Features:
 
@@ -40,7 +40,7 @@ This project is developed by a team of two collaborators, each responsible for d
 Project Setup and Collaboration Guide
 
 Clone the Repository
-git clone https://github.com/Loisyy/eco_fashion_guide.git
+git clone https://github.com/Loisyy/fashioniista.git
 cd repository
 
 Create a New Branch
